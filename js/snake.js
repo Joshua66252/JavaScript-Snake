@@ -443,8 +443,8 @@ SNAKE.Snake = SNAKE.Snake || (function() {
             me.snakeHead.elm.className += " snake-snakebody-alive";
             me.snakeHead.row = config.startRow || 1;
             me.snakeHead.col = config.startCol || 1;
-            me.snakeHead.xPos = me.snakeHead.row * playingBoard.getBlockWidth();
-            me.snakeHead.yPos = me.snakeHead.col * playingBoard.getBlockHeight();
+            me.snakeHead.xPos = me.snakeHead.row * playingBoard.getBlockWidth()+1;//edit
+            me.snakeHead.yPos = me.snakeHead.col * playingBoard.getBlockHeight()+1;
             me.snakeHead.elm.style.left = me.snakeHead.xPos + "px";
             me.snakeHead.elm.style.top = me.snakeHead.yPos + "px";
         };
@@ -507,8 +507,8 @@ SNAKE.Food = SNAKE.Food || (function() {
         var elmFood = document.createElement("div");
         elmFood.setAttribute("id", "snake-food-"+myId);
         elmFood.className = "snake-food-block";
-        elmFood.style.width = playingBoard.getBlockWidth() + "px";
-        elmFood.style.height = playingBoard.getBlockHeight() + "px";
+        elmFood.style.width = playingBoard.getBlockWidth()-2 + "px";//edit
+        elmFood.style.height = playingBoard.getBlockHeight()-2 + "px";
         elmFood.style.left = "-1000px";
         elmFood.style.top = "-1000px";
         playingBoard.getBoardContainer().appendChild(elmFood);
