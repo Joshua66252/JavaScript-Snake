@@ -332,10 +332,6 @@ SNAKE.Snake = SNAKE.Snake || (function() {
             newHead.elmStyle.top = newHead.yPos + "px";
 
             // check the new spot the snake moved into
-            if (me.snakeLength==1){ //Marker
-		me.eatFood();
-		me.eatFood();
-	    }
             if (grid[newHead.row][newHead.col] === 0) {
                 grid[newHead.row][newHead.col] = 1;
                 setTimeout(function(){me.go();}, snakeSpeed);
