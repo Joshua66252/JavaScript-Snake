@@ -172,7 +172,7 @@ SNAKE.Snake = SNAKE.Snake || (function() {
         me.snakeBody["b0"].next = me.snakeBody["b0"];
         me.snakeBody["b0"].prev = me.snakeBody["b0"];
 
-        me.snakeLength = 3;
+        me.snakeLength = 1;
         me.snakeHead = me.snakeBody["b0"];
         me.snakeTail = me.snakeBody["b0"];
         me.snakeHead.elm.className = me.snakeHead.elm.className.replace(/\bsnake-snakebody-dead\b/,'');
@@ -286,7 +286,6 @@ SNAKE.Snake = SNAKE.Snake || (function() {
                 isFirstGameMove = false;
             }
         };
-
         /**
         * This method is executed for each move of the snake. It determines where the snake will go and what will happen to it. This method needs to run quickly.
         * @method go
@@ -333,7 +332,10 @@ SNAKE.Snake = SNAKE.Snake || (function() {
             newHead.elmStyle.top = newHead.yPos + "px";
 
             // check the new spot the snake moved into
-
+            if (me.snakeLength==1){ //Marker
+		me.eatFood();
+		me.eatFood();
+	    }
             if (grid[newHead.row][newHead.col] === 0) {
                 grid[newHead.row][newHead.col] = 1;
                 setTimeout(function(){me.go();}, snakeSpeed);
