@@ -73,8 +73,9 @@ a.snake-link:hover {
 
 .snake-snakebody-alive {
    background-image: url('./images/images.png');
-   margin-top: 2px;
-   margin-bottom: 2px;
+   height: 800;
+   width: 800;
+   margin: 100;
 }
 .snake-snakebody-dead {
    background-image: url('./images/dead-dark-snakeblock.png');
