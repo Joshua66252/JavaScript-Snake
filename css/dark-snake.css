@@ -72,7 +72,7 @@ a.snake-link:hover {
 }
 
 .snake-snakebody-alive {
-   background-image: url('./images/dark-snakeblock.png');
+   background-image: url('./images/images.png');
 }
 .snake-snakebody-dead {
    background-image: url('./images/dead-dark-snakeblock.png');
