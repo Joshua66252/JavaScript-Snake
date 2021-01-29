@@ -73,11 +73,9 @@ a.snake-link:hover {
 
 .snake-snakebody-alive {
    background-image: url('./images/images.png');
-   margin: 1px;
 }
 .snake-snakebody-dead {
    background-image: url('./images/dead-dark-snakeblock.png');
-   margin: 1px;
 }
 
 .snake-food-block {
