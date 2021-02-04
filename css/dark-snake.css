@@ -83,7 +83,6 @@ a.snake-link:hover {
     padding: 0px;
     background-color: #313E24;
     background-image: url('./images/dark_apple.png');
-    position: absolute;
 }
 
 .snake-playing-field {
