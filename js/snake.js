@@ -504,7 +504,7 @@ SNAKE.Food = SNAKE.Food || (function() {
         var fRow, fColumn;
         var myId = instanceNumber++;
 
-        var elmFood = document.createElement("div");
+        var elmFood = document.createElement("img");
         elmFood.setAttribute("id", "snake-food-"+myId);
         elmFood.className = "snake-food-block";
         elmFood.style.width = playingBoard.getBlockWidth() + "px";
