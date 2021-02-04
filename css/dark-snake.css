@@ -81,7 +81,7 @@ a.snake-link:hover {
 .snake-food-block {
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-image: url('./images/dark_apple.png');
     position: absolute;
 }
 
