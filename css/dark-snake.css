@@ -79,10 +79,9 @@ a.snake-link:hover {
 }
 
 .snake-food-block {
-    margin: 0px;
-    padding: 0px;
-    background-color: #313E24;
     background-image: url('./images/dark_apple.png');
+    position: absolute;
+    border: 3px solid black;
 }
 
 .snake-playing-field {
