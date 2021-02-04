@@ -511,6 +511,11 @@ SNAKE.Food = SNAKE.Food || (function() {
         elmFood.style.height = playingBoard.getBlockHeight() + "px";
         elmFood.style.left = "-1000px";
         elmFood.style.top = "-1000px";
+	
+	elmFood.elm = null;
+        elmFood.elmStyle = null;
+        elmFood.next = null;
+        elmFood.prev = null;
         playingBoard.getBoardContainer().appendChild(elmFood);
 
         // ----- public methods -----
